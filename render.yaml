@@ -4,8 +4,8 @@ services:
     runtime: node
     repo: https://github.com/bribera/back-learning
     branch: main
-    buildCommand: yarn install && yarn build
-    startCommand: yarn start
+    buildCommand: npm install && npm build
+    startCommand: npm start
     healthCheckPath: /_health
     envVars:
       - key: NODE_VERSION
@@ -23,4 +23,4 @@ services:
       mountPath: /opt/render/project/src/public/uploads
       sizeGB: 10
     databases:
-      - name: strapi-db
+      - name: postgresql://neondb_owner:npg_85MaxgfGUhDQ@ep-blue-violet-aiennq48-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
