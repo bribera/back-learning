@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promo_offers",
+  "info": {
+    "singularName": "promo-offer",
+    "pluralName": "promo-offers",
+    "displayName": "Promo-offer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "bg_order": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "rate_prom": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rate-prom.rate-prom"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_items",
+  "info": {
+    "singularName": "card-item",
+    "pluralName": "card-items",
+    "displayName": "Card-item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "originalPrice": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

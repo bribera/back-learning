@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rate_proms",
+  "info": {
+    "singularName": "rate-prom",
+    "pluralName": "rate-proms",
+    "displayName": "Rate_prom"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rate": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
