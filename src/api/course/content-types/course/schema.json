@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "statuts": {
+      "type": "enumeration",
+      "enum": [
+        "draft ",
+        "published",
+        "in_progress "
+      ]
+    },
+    "currentLesson": {
+      "type": "integer"
+    },
+    "totalLessons": {
+      "type": "integer"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "instructor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::instructor.instructor"
+    },
+    "included": {
+      "type": "component",
+      "component": "feature-item.includes",
+      "repeatable": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "priceSale": {
+      "type": "decimal"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "tweeter": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "timeLeft": {
+      "type": "time"
+    },
+    "review": {
+      "type": "component",
+      "component": "courses.reviews",
+      "repeatable": true
+    },
+    "zoomMeetingId": {
+      "type": "string"
+    },
+    "zoomMeetingPassword": {
+      "type": "string"
+    },
+    "meetingDate": {
+      "type": "date"
+    },
+    "isCompleted": {
+      "type": "boolean"
+    },
+    "lessons": {
+      "type": "component",
+      "component": "lessons.lessons",
+      "repeatable": true
+    }
+  }
+}
