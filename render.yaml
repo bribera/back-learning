@@ -12,16 +12,11 @@ services:
         value: 18.18.0
       - key: NODE_ENV
         value: production
-      - key: DATABASE_URL
-        sync: false 
       - key: CLOUDINARY_NAME
         sync: false
       - key: CLOUDINARY_KEY
         sync: false
       - key: CLOUDINARY_SECRET
         sync: false
-    disk:
-      name: strapi-uploads
-      mountPath: /opt/render/project/src/public/uploads
-      sizeGB: 10
+    
     
