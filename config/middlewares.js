@@ -6,7 +6,7 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['http://localhost:3000'], // URL de votre Next.js
+      origin: ['http://localhost:3000', 'front-learning.vercel.app'], // URL de votre Next.js
     },
   },
   'strapi::poweredBy',
